@@ -187,6 +187,15 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #EA580C;
         }
+        /* Light Mode-এ পোর্ট্রেটের সাদা ধোঁয়া বাদ দিয়ে ক্লিন ডার্ক কার্ড */
+    html:not(.dark) .hero-portrait-vignette {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 35%) !important;
+    }
+    html:not(.dark) div:has(> .hero-portrait-vignette) {
+      background-color: #000000 !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
     </style>
 </head>
 <body class="selection:bg-[#EA580C] selection:text-white">
