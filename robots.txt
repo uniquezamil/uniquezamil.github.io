@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://uniquezamil.github.io/sitemap.xml
