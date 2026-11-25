@@ -14,7 +14,9 @@
 <meta property="og:url" content="https://uniquezamil.github.io/">
 <meta property="og:type" content="website">
     <meta name="description" content="Official portfolio of Zamil Mahmud (জামীল মাহমুদ) — App Developer, AI Creator, Music Artist & Storyteller. Founder of UZ Industry (OS & AI), UZverse (Apps & UI), UZC (Story Universe), Kakatul, and Shopuni." />
-
+<link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <meta name="theme-color" content="#000000" />
     <!-- Google Fonts: Nova Flat (English, Brands & Numbers) + Anek Bangla & Hind Siliguri (Bengali) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1648,5 +1650,12 @@ src="https://raw.githubusercontent.com/uniquezamil/uniquezamil.github.io/main/po
             };
         })();
     </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
 </body>
 </html>
